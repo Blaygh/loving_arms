@@ -48,8 +48,7 @@ const animateCounter = (counter) => {
     const progress = Math.min((currentTime - startTime) / duration, 1);
     const easedProgress = 1 - Math.pow(1 - progress, 3);
     const value = Math.floor(easedProgress * target);
-    const suffix = target === 98 ? '%' : '+';
-    counter.textContent = `${value}${suffix}`;
+    counter.textContent = String(value);
 
     if (progress < 1) {
       requestAnimationFrame(update);
