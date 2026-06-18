@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Allow: /images/
+
+Sitemap: https://www.lovingarmshomecare.com/sitemap.xml
